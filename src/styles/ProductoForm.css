@@ -1,0 +1,106 @@
+.producto-form-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producto-form-container h2 {
+    text-align: center;
+    color: #813689f6;
+    margin-bottom: 2rem;
+}
+
+.producto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #393939;
+    margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #393939;
+    background-color: #f9f9f9;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #813689f6;
+    box-shadow: 0 0 0 3px rgba(129, 54, 137, 0.2);
+}
+
+.botones-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-guardar,
+.btn-cancelar {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-guardar {
+    background-color: #35b5babe;
+    color: #fff;
+}
+
+.btn-guardar:hover {
+    background-color: #2a9494;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-cancelar {
+    background-color: #e0e0e0;
+    color: #393939;
+}
+
+.btn-cancelar:hover {
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mensaje-exito {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.mensaje-error {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+}

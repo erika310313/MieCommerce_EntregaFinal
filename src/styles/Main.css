@@ -1,0 +1,151 @@
+.main-container {
+    margin: 0;
+    padding: 0 0 40px 0;
+    min-height: 100vh;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.main-container h1 {
+    /*---------------------*/
+    background: #35b5babe;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #35b5babe, #f1abc9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #35b5babe, #f1abc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: transparent;
+    color: #393939;
+    /*---------------------*/
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #8b1151;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.main-container h1:hover{
+    color: #000000;
+}
+
+.main-container section {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 24px 16px;
+    background: #bd44cb20;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(129,54,137,0.06);
+}
+
+.main-container h2, .main-container h3 {
+    color: #813689f6;
+    margin-bottom: 10px;
+}
+
+.nosotros .grid,
+.historia .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.nosotros .container,
+.historia .container {
+    flex: 1 1 300px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 6px #813689f6;
+}
+
+.titulos h2 {
+    margin: 0 0 10px 0;
+    color: #813689f6;
+    font-size: 1.6rem;
+}
+
+.section-reviews {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 16px;
+    background: #f8f4ec;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(129,54,137,0.06);
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:32px;
+    background: #bd44cb20;
+    padding: 30px 10px 20px 10px;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 32px 0;
+    width: 100%;
+    box-shadow: 0 2px 12px rgba(129,54,137,0.06);
+    justify-items: center;
+    align-items: stretch;
+}
+
+.review-comment {
+    font-style: italic;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.review-rating {
+    color: #FFD700; /* Color dorado para las estrellas */
+    font-size: 1.5rem;
+}
+
+.reviews-title {
+    text-align: center;
+    color: #813689f6;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.review {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(129,54,137,0.06);
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;                      /* <-- Asegura que la card ocupe todo el ancho de la celda */
+    box-sizing: border-box;
+}
+
+.review-img {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px !important;
+}
+
+.review-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .reviews-container {
+        padding: 20px 5px;
+        grid-template-columns: 1fr;
+    }
+    .main-container h1 {
+        font-size: 2rem;
+    }
+    .main-title {
+        font-size: 1.3rem;
+    }
+}

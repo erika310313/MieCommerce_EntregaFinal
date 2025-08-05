@@ -1,0 +1,91 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colores paleta principal (ajustados y estandarizados) */
+  --color-primary: #813689f6; /*púrpura principal */
+  --color-secondary: #35b5babe; /*verde/azul secundario */
+  --color-accent-pink: #f1abc9; /*rosa gradiente */
+  --color-text-dark: #393939; /* Gris oscuro para texto general */
+  --color-text-light: #fff; /* Blanco para texto */
+  --color-bg-transparent-light: #bd44cb20; /* Fondo semitransparente */
+  --color-shadow-light: rgba(129, 54, 137, 0.08); /* Sombra sutil */
+  --color-shadow-hover: #35b5babe; /* Sombra para hover */
+
+  /* Espaciados existentes */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-xxxl: 40px;
+  --spacing-xxxxl: 48px;
+
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 10px; /* Usado en imágenes de tarjeta y detalle */
+  --border-radius-lg: 14px; /* Usado en tarjetas de producto */
+  --border-radius-xl: 16px; /* Usado en contenedores principales */
+
+  /* Transiciones */
+  --transition-speed-fast: 0.18s;
+  --transition-speed-medium: 0.25s;
+  --transition-speed-slow: 0.3s;
+
+  /* Modo oscuro/claro (los colores base del navegador) */
+  color-scheme: light dark;
+  color: var(--color-text-light); /* Color de texto por defecto (tema oscuro) */
+  background-color: #242424; /* Color de fondo por defecto (tema oscuro) */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+  transition: color var(--transition-speed-fast);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Media query para el tema claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text-light: #213547; /* Adapta el texto para el tema claro */
+    background-color: #ffffff; /* Adapta el fondo para el tema claro */
+    --color-primary: #8b1151; /* Un color primario para el modo claro si lo deseas */
+    --color-secondary: #f1abc9; /* Un color secundario para el modo claro */
+    --color-text-dark: #393939; /* Mismo gris oscuro */
+  }
+  a:hover {
+    color: var(--color-secondary); /* Adapta el hover del enlace para el tema claro */
+  }
+}
+
+
+

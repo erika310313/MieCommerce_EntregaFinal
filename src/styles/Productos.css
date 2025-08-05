@@ -1,0 +1,141 @@
+.productos-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de la tarjeta de producto (ProductoCard) */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #393939;
+  padding: 1rem 1rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  color: #813689f6;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.card-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+}
+
+/* Estilos para el botón de "Agregar al Carrito" */
+.card-btn {
+  background-color: #35b5babe;
+  color: #fff;
+}
+
+.card-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.card-btn:hover:not(:disabled) {
+  background-color: #35b5babe;
+  transform: translateY(-2px);
+}
+
+/* Estilos para los nuevos botones de administrador */
+.btn-edit {
+  background-color: #813689f6; 
+  color: #fff
+}
+
+.btn-edit:hover {
+  background-color: #35b5babe;
+}
+
+.btn-delete {
+  background-color: #813689f6; 
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #35b5babe;
+}
+
+/* Estilos para el botón de agregar producto (layout) */
+.admin-actions {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-agregar-producto {
+  background-color: #813689f6;
+  color:#fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--border-radius-md);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-agregar-producto:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+    .productos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .productos-container {
+        grid-template-columns: 1fr;
+    }
+}
