@@ -1,5 +1,6 @@
-Guía de Despliegue: Mi Restaurante
-Bienvenido al proyecto Mi Restaurante, una aplicación web dinámica construida con React que ofrece un menú digital, carrito de compras, y un robusto panel de administración para gestionar productos.
+Guía de Despliegue: Sabores Venearg
+
+Bienvenido al proyecto Sabores Venearg, una aplicación web dinámica construida con React que ofrece un menú digital, carrito de compras, y un robusto panel de administración para gestionar productos.
 
 🚀 Requisitos y Tecnologías Usadas
 React: Biblioteca principal para la construcción de la interfaz de usuario.
@@ -59,3 +60,6 @@ Vercel
 GitHub Pages
 
 Estos servicios se conectan directamente a tu repositorio de Git y despliegan la aplicación automáticamente cada vez que realizas un push a la rama principal.
+
+Erika Oropeza
+Talento Tech 2025
